@@ -1,55 +1,40 @@
-'''
-IndexOf: you should be able to determine the location of an item in an list
-Example:
-arr = [1,2,3,5,6]
-calling the function like
-index_of(arr, 3) should return the index 2
-'''
+# IndexOf: Find the index of a specified item in a list
 def index_of(arr, item):
-    return
+    return arr.index(item)
 
-'''
-Sum: you should be able to sum the items of an list
-Example: arr = [1,2,3]   =>  6
-'''
+# Sum: Calculate the sum of all items in a list
 def sum_list(arr):
-    return
+    return sum(arr)
 
-'''
-Filter: Should filter out all instances of a value from an list
-Example: filtering 2 out of [1,2,3,5,6,2,4,2] should return [1,3,5,6,4]
-'''
+# Filter: Remove all instances of a specified item from a list
 def filter_out(arr, item):
-    return
+    return [x for x in arr if x != item]
 
-# Append: you should be able to add an item to the end of an list
+# Append: Add an item to the end of a list
 def append(arr, item):
-    return
+    arr.append(item)
+    return arr
 
-'''
-Truncate: you should be able to remove the last item of an list
-hint: Use pop or slice to remove the last element of the list
-'''
+# Truncate: Remove the last item from a list
 def truncate(arr):
-    return
+    arr.pop()
+    return arr
 
-'''
-Concat: you should be able to join together two lists
-'''
+# Concat: Join two lists together
 def concat(arr1, arr2):
-    return
+    return arr1 + arr2
 
-'''
-Insert: you should be able to add an item at the specified index of an list
-hint: Use the insert() method
-'''
+# Insert: Insert an item at a specified index in a list
 def insert(arr, item, index):
-    return
+    arr.insert(index, item)
+    return arr
 
-'''
-Square: you should be able to square each number in an list
-hint: Use the map() function
-Example: [1,2,4,5] => [1,4,16,25]
-'''
+# Square: Square each number in a list
 def square(arr):
-    return
+    return list(map(lambda x: x**2, arr))
+
+# Example usage
+arr = [1, 2, 3, 5, 6]
+arr_example = [1, 2, 3]
+filter_arr = [1, 2, 3, 5, 6, 2, 4, 2]
+square_arr = [1, 2, 4, 5]
